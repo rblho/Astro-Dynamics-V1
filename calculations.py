@@ -16,6 +16,7 @@ def calculate_velocity(v_i, d_alt, M_s, T, burn_active, M, r, burn_time=160, dis
     r_p = r + d_alt
 
     # Energy conservation for hyperbolic approach
+    
     vf = math.sqrt(v_i**2 + 2 * G * M / r_p)
 
     # Add thrust effect if burn is active

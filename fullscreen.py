@@ -1,6 +1,7 @@
 import tkinter as tk
 from calculations import calculate_deflection_angle, calculate_velocity
 import math
+from PIL import Image, ImageTk
 
 G = 6.67430e-11  # gravitational constant
 M_p = 5.972e24   # mass of planet (Earth-like)
@@ -125,6 +126,8 @@ planety = canvas_height / 2
 ball_radius = 4
 planet_radius = 60
 
+
+
 # --- Burn points storage ---
 burn_records = []
 
@@ -186,9 +189,23 @@ y = ball_start_y + 9
 canvas.coords(ball, x, y, x + 2 * ball_radius, y + 2 * ball_radius)
 
 planet = canvas.create_oval(0, 0, 2 * planet_radius, 2 * planet_radius, fill="#181BDF")
+
+# --- Load the image once (keep a global reference so it doesn’t disappear) ---
+earth_photo = tk.PhotoImage(file="earttt.png")
+earth_small = earth_photo.subsample(3, 3)  # adjust scale as needed
+
+# --- Draw image centered above the existing oval ---
+planet_img_id = canvas.create_image(
+    planetx, planety, image=earth_small, anchor="center", tags="planet_image"
+)
+canvas.tag_raise("planet_image", planet)  # ensure image is on top
+
 canvas.coords(planet, planetx - planet_radius, planety - planet_radius,
               planetx + planet_radius, planety + planet_radius)
-canvas.create_line(0, canvas_height / 2, canvas_width, canvas_height / 2, width=2, fill='#181BDF')
+canvas.create_line(0, canvas_height / 2, canvas_width, canvas_height / 2, width=2, fill='#1702ae')
+
+canvas.tag_raise("planet_image")
+
 
 label = tk.Label(side_panel, text="Controls", fg="#4D5D72", bg="#D5D8DD", font=("consolas bold", 14))
 label.pack(pady=20)

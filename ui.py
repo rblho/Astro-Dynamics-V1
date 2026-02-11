@@ -55,7 +55,7 @@ planet_colors = {
 
 ### POP UP WINDOW SETTINGS (Do not change, ensures working window on all screens) ###
 root = tk.Tk()
-root.title('AstroDynamics')
+root.title('Gravity Assist Sim')
 root.geometry('1200x700')
 root.resizable(False, False)
 
@@ -65,7 +65,6 @@ canvas_height = 700
 # Center on any screen #
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-
 x = int((screen_width / 2) - (canvas_width / 2))
 y = int((screen_height / 2) - (canvas_height / 2))
 
