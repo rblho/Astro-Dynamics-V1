@@ -1,5 +1,5 @@
 # Astro-Dynamics-V1
-
+## RUN ui.py NOT UI_new.py
 
 ## UPDATES TBD ##
 
@@ -10,5 +10,3 @@
 # Include accurate time starting from 0
 
 # Help page / help button
-
-# My own graphics
