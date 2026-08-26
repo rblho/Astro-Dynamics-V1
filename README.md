@@ -4,7 +4,7 @@
 
 **A real-time simulator of spacecraft gravity-assist maneuvers, built from the ground up in Python**
 
-*Personal project, later adopted as a lab exercise · Wentworth Institute of Technology*
+*Personal project, later adopted as lab exercise · Wentworth Institute of Technology*
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Tkinter](https://img.shields.io/badge/GUI-Tkinter-4B8BBE?style=flat)
