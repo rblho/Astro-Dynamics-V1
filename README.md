@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🪐 Gravity Assist Flyby Simulator
+#  Gravity Assist Flyby Simulator
 
 **A real-time simulator of spacecraft gravity-assist maneuvers, built from the ground up in Python**
 
@@ -34,7 +34,6 @@
 
 A **gravity assist** (or flyby) is how missions like Voyager, Cassini, and New Horizons picked up speed without burning extra fuel: swing close enough to a planet, let its gravity bend your path, and walk away faster (or slower, or redirected) than you arrived. This project is an interactive, real-time simulator of that maneuver, letting you set a spacecraft's incoming velocity, mass, and approach distance around a planet, then watch the flyby play out and see exactly how much the planet's gravity changed its trajectory.
 
-It started as a personal side project and grew into something detailed enough that it was adopted as a lab exercise, which pushed it from "a fun simulation" into something the underlying physics had to hold up under.
 
 <br>
 
